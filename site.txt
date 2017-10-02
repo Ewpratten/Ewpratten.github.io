@@ -1,3 +1,8 @@
+_|_|_|    _|_|_|_|_|  _|              _|_|_|  _|_|_|_|  _|_|_|    _|      _|  _|_|_|_|  _|_|_|    
+_|    _|      _|      _|            _|        _|        _|    _|  _|      _|  _|        _|    _|  
+_|_|_|        _|      _|              _|_|    _|_|_|    _|_|_|    _|      _|  _|_|_|    _|_|_|    
+_|    _|      _|      _|                  _|  _|        _|    _|    _|  _|    _|        _|    _|  
+_|    _|      _|      _|_|_|_|      _|_|_|    _|_|_|_|  _|    _|      _|      _|_|_|_|  _|    _|  
 <span id="a">ewpratten@rtlserver</span>:<span id="b">~</span><span id="c">$</span>cat ewpratten.txt<br/><br/>
 Hi, I am Evan Pratten.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>I am a teenage boy who likes to make things.<!-- slightdelayhere--> Preferably related to computers in some way or another.</p><!-- qowifjqwoeijfoqweijfqweoifjqweofijqweoqwoijefoqwijefoijfqiwoefjj -->
 <p>I'm the creator and a member of<a href="http://retrylife.ca">RetryLife</a>.</p><!- oqwipjefqwioefjwioqfjoiqwjfeioqwjefoi -->
