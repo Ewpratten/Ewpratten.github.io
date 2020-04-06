@@ -3,7 +3,13 @@
 </head>
 <body>
 
-    {% include nav.html %}
+    <div class="content">
+        {% include nav.html %}
+    </div>
+    <div class="background">
+        <img class="frosted bgfill" src="{{ '/assets/img/lf_background_trees.jpg' | relative_url }}" alt="">
+    </div>
+    
 
     {% include foot.html %}
 </body>
