@@ -1,0 +1,60 @@
+name: Evan Pratten
+email: ewpratten@retrylife.ca
+description: >- 
+  Computer wizard, student, <a href="https://frc5024.github.io">@frc5024</a> 
+  programming team lead, and radio enthusiast.
+
+# Website URL config
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://retrylife.ca" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /blog/:year/:month/:day/:slug
+
+# Google tracking
+ga_analytics: UA-74118570-2
+
+# Socials
+twitter_username: ewpratten
+github_username:  ewpratten
+gitlab_username: ewpratten
+devrant_username: ewpratten
+keybase_username: ewpratten
+tiktok_username: evanpratten
+instagram_username: evanpratten
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  # input: GFM
+  syntax_highlighter: rouge
+sass:
+    sass_dir: _sass
+    style: compressed
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from # https://github.com/jekyll/jekyll-redirect-from
+  - jemoji
+  - jekyll-mentions
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
