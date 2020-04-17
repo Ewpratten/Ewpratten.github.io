@@ -1,10 +1,10 @@
 ---
 ---
 
-@import 'ui/container.scss';
-@import 'ui/grid.scss';
-@import 'ui/nav.scss';
+@import 'ui/theme.scss';
 @import 'ui/background.scss';
+@import 'ui/preloader.scss';
+@import 'ui/fade-animation.scss';
 
 html {
   box-sizing: border-box;
@@ -13,4 +13,8 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+.hidden{
+  display: none !important;
 }

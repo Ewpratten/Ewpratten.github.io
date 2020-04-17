@@ -1,15 +1,33 @@
 <head>
     {% include head.html %}
 </head>
+
 <body>
 
-    <div class="content">
-        {% include nav.html %}
+    <div class="landing-info">
+        
     </div>
-    <div class="background">
-        <img class="frosted bgfill" src="{{ '/assets/img/lf_background_trees.jpg' | relative_url }}" alt="">
-    </div>
-    
+
+
+    {% include preloader.html %}
 
     {% include foot.html %}
+    <script src="/assets/js/background-handler.js"></script>
+    <script>
+        var beginTime = new Date().getTime() / 1000;
+
+        // Load page
+        loadBackground();
+
+
+        // Hide animation
+        var endTime = new Date().getTime() / 1000;
+
+        var timeout = 0.3;
+        if (endTime - beginTime < timeout) {
+            setTimeout(hidePreLoader, (timeout - (endTime - beginTime)) * 1000);
+        } else {
+            hidePreLoader();
+        }
+    </script>
 </body>
