@@ -41,7 +41,8 @@
             {% for item in site.data.timeline.items %}
             <li class="timeline-item">
                 <div class="timeline-info">
-                    <span>{{item.date}}</span>
+                    <span>{{item.date}} {% if item.outlink.show %}<a href="{{item.outlink.url}}"><i
+                                class="fas fa-link"></i></a>{% endif %}</span>
                 </div>
                 <div class="timeline-marker {{item.type}}"></div>
                 <div class="timeline-content">
@@ -55,11 +56,21 @@
 
     <div class="timeline-card tablet-only">
         <div class="container">
+            <div style="text-align:center">
+                <h3>Career timeline</h3>
+                <div class="badge-legend">
+                    {% for type in site.data.timeline.types %}
+                    <span class="badge"
+                        style="background-color:{{type.color}}; color:{{type.accent}}">{{type.name}}</span>
+                    {% endfor %}
+                </div>
+            </div>
             <ul class="timeline timeline-centered">
                 {% for item in site.data.timeline.items %}
                 <li class="timeline-item">
                     <div class="timeline-info">
-                        <span>{{item.date}}</span>
+                        <span>{{item.date}} {% if item.outlink.show %}<a href="{{item.outlink.url}}"><i
+                                    class="fas fa-link"></i></a>{% endif %}</span>
                     </div>
                     <div class="timeline-marker {{item.type}}"></div>
                     <div class="timeline-content">

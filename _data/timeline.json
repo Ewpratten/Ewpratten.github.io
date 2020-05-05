@@ -1,22 +1,22 @@
 {
-    "types":[
+    "types": [
         {
-            "name":"role",
-            "color":"#ff6b6b",
-            "accent":"#fff"
+            "name": "role",
+            "color": "#ff6b6b",
+            "accent": "#fff"
         },
         {
-            "name":"project",
-            "color":"#7cff6b",
-            "accent":"#222"
+            "name": "project",
+            "color": "#7cff6b",
+            "accent": "#222"
         },
         {
-            "name":"event",
-            "color":"#6b6eff",
-            "accent":"#fff"
+            "name": "event",
+            "color": "#6b6eff",
+            "accent": "#fff"
         }
     ],
-    "items":[
+    "items": [
         {
             "date": "JUN 2019 - Current",
             "title": "Lead of Software Development",
@@ -30,16 +30,27 @@
             "type": "role"
         },
         {
-            "date": "APR 2019",
-            "title": "Released ThriftyField",
-            "subtitle": "An open-source field management program for use in FRC",
-            "type": "project"
+            "date": "JUL 2019",
+            "title": "Released devDNS",
+            "subtitle": "My first large-scale chat bot. It was inspired by Cloudflare's <a href='https://twitter.com/1111resolver'>@1111resolver</a> bot, and was used by many devRant.com users",
+            "type": "project",
+            "outlink": {
+                "show": true,
+                "url": "https://devrant.com/collabs/2163502/devdns-a-dns-over-devrant-service-inspired-by-at1111resolve-on-twitter",
+                "text":"Announcement"
+            }
         },
         {
             "date": "JUN 2018 - JUN 2019",
             "title": "Co-lead of Software Development",
             "subtitle": "FRC Team 5024: Raider Robotics",
             "type": "role"
+        },
+        {
+            "date": "APR 2019",
+            "title": "Released ThriftyField",
+            "subtitle": "An open-source field management program for use in FRC",
+            "type": "project"
         },
         {
             "date": "OCT 2016 - JAN 2017",
