@@ -1,6 +1,6 @@
 #info-card {
   height: 100vh;
-  @media only screen and (min-device-width: 990px) {
+  @media only screen and (min-device-width: 990px) and (min-device-height: 680px) {
     width: calc(100vw * 0.6);
     position: fixed;
     top: 0;
@@ -13,7 +13,7 @@
     @media only screen and (max-device-width: 475px) {
       height: 20vh;
     }
-    @media only screen and (min-device-width: 989px) {
+    @media only screen and (min-device-width: 990px) and (min-device-height: 680px) {
       height: 20vh;
     }
   }
@@ -46,23 +46,34 @@
 }
 
 .timeline-card {
-  @media only screen and (min-device-width: 988px) {
+  @media only screen and (min-device-width: 990px) and (min-device-height: 680px) {
     margin: 30px;
     position: absolute;
     width: calc(100vw * 0.4);
     right: 0%;
 
-    .timeline{
-        max-width:600px;
+    .timeline {
+      max-width: 600px;
     }
   }
 
+  @media only screen and (max-device-height: 597px) {
+    .container {
+      margin-top: 100px;
+    }
+  }
+
+  @media only screen and (max-device-height: 479px) {
+    .container {
+      margin-top: 300px;
+    }
+  }
 
   #timeline-header {
     height: 45vh;
   }
 
-  .badge-legend{
-      margin-bottom:10px;
+  .badge-legend {
+    margin-bottom: 10px;
   }
 }
