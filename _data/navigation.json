@@ -2,6 +2,13 @@
     {
         "name": "Blog",
         "route": "/blog",
-        "show_on_home": true
+        "show_on_home": true,
+        "bar_after":true
+    },
+    {
+        "name": "Social",
+        "route": "/socials",
+        "show_on_home": true,
+        "bar_after":false
     }
 ]

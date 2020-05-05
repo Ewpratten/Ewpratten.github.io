@@ -1,9 +1,6 @@
 [
     {
-        "date":{
-            "year":2020,
-            "month":""
-        },
+        "date": "2020",
         "title":"Lead of software development",
         "subtitle":"Raider Robotics"
     }

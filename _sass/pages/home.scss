@@ -1,16 +1,24 @@
 #info-card {
   height: 100vh;
+  @media only screen and (min-device-width: 990px) {
+    width: calc(100vw * 0.6);
+    position: fixed;
+    top: 0;
+  }
   .home-gap {
     height: 10vh;
     @media only screen and (max-device-width: 768px) {
       height: 5vh;
     }
     @media only screen and (max-device-width: 475px) {
-        height: 20vh;
+      height: 20vh;
+    }
+    @media only screen and (min-device-width: 989px) {
+        height:20vh;
     }
   }
   .inner-card {
-    max-width: 600px;
+    max-width: 500px;
     text-align: center;
 
     .name {
@@ -27,8 +35,26 @@
       max-width: 300px;
       border-radius: 100%;
       @media only screen and (max-device-width: 475px) {
-        display:none;
+        display: none;
       }
     }
+    .home-nav-item {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.timeline-card {
+  @media only screen and (min-device-width: 988px) {
+    margin: 30px;
+    position: absolute;
+    // display:flex;
+    width: calc(100vw * 0.4);
+    right: 0%;
+  }
+
+  #timeline-header {
+    height: 45vh;
   }
 }

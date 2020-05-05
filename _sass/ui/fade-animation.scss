@@ -43,3 +43,13 @@
     from { opacity: 1; }
     to   { opacity: 0; }
 }
+
+.appear{
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+.disappear{
+    animation-name: fadeout;
+    animation-duration: 1s;
+}

@@ -11,7 +11,7 @@
   }
 }
 .desktop-only {
-  @media only screen and (max-device-width: 768px) {
+  @media only screen and (max-device-width: 989px) {
     display: none !important;
   }
 }
