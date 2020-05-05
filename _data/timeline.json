@@ -1,7 +1,22 @@
 [
     {
-        "date": "2020",
-        "title":"Lead of software development",
-        "subtitle":"Raider Robotics"
+        "date": "JUN 2019 - Current",
+        "title":"Lead of Software Development",
+        "subtitle":"FRC Team 5024: Raider Robotics"
+    },
+    {
+        "date": "MAY 2018 - DEC 2019",
+        "title":"Technician",
+        "subtitle":"Personal Computers of London"
+    },
+    {
+        "date": "JUN 2018 - JUN 2019",
+        "title":"Co-lead of Software Development",
+        "subtitle":"FRC Team 5024: Raider Robotics"
+    },
+    {
+        "date": "OCT 2016 - JAN 2017",
+        "title":"Lead Programmer",
+        "subtitle":"FLL Team 22052: Star Treckies"
     }
 ]

@@ -28,12 +28,13 @@
     </div>
 
 
-    <div class="timeline-card desktop-only">
+    <div class="timeline-card desktop-only appear">
         <div id="timeline-header">
         </div>
+        <h3>Career timeline</h3>
         <ul class="timeline">
+            {% for item in site.data.timeline %}
             <li class="timeline-item">
-                {% for item in site.data.timeline %}
                 <div class="timeline-info">
                     <span>{{item.date}}</span>
                 </div>
@@ -50,8 +51,8 @@
     <div class="timeline-card tablet-only">
         <div class="container">
             <ul class="timeline timeline-centered">
+                {% for item in site.data.timeline %}
                 <li class="timeline-item">
-                    {% for item in site.data.timeline %}
                     <div class="timeline-info">
                         <span>{{item.date}}</span>
                     </div>
