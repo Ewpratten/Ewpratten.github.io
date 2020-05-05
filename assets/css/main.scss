@@ -1,10 +1,11 @@
 ---
 ---
 
-@import 'ui/theme.scss';
-@import 'ui/background.scss';
-@import 'ui/preloader.scss';
-@import 'ui/fade-animation.scss';
+@import "ui/fade-animation.scss";
+@import "util/mobileutil.scss";
+
+// Pages
+@import 'pages/home.scss';
 
 html {
   box-sizing: border-box;
@@ -15,6 +16,13 @@ html {
   box-sizing: inherit;
 }
 
-.hidden{
+.hidden {
   display: none !important;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Raleway', sans-serif;
 }

@@ -1,0 +1,17 @@
+.mobile-only {
+  display: none !important;
+  @media only screen and (max-device-width: 768px) {
+    display: unset !important;
+  }
+}
+.tablet-only {
+  display: none !important;
+  @media only screen and (max-device-width: 989px) {
+    display: unset !important;
+  }
+}
+.desktop-only {
+  @media only screen and (max-device-width: 768px) {
+    display: none !important;
+  }
+}

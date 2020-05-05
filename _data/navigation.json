@@ -1,0 +1,7 @@
+[
+    {
+        "name": "Blog",
+        "route": "/blog",
+        "show_on_home": true
+    }
+]
