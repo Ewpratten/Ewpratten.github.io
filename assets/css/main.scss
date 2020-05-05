@@ -44,3 +44,12 @@ h6 {
     border: 3px solid {{type.color}};
   }
 {% endfor %}
+
+.inline{
+  white-space:nowrap;
+  display: block;
+}
+
+.inline * *{
+  display: inline-block;
+}

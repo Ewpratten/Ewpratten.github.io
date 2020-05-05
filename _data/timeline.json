@@ -1,19 +1,14 @@
 {
     "types": [
         {
-            "name": "role",
+            "name": "Career",
             "color": "#ff6b6b",
             "accent": "#fff"
         },
         {
-            "name": "project",
+            "name": "Projects",
             "color": "#7cff6b",
             "accent": "#222"
-        },
-        {
-            "name": "event",
-            "color": "#6b6eff",
-            "accent": "#fff"
         }
     ],
     "items": [
@@ -21,42 +16,55 @@
             "date": "JUN 2019 - Current",
             "title": "Lead of Software Development",
             "subtitle": "FRC Team 5024: Raider Robotics",
-            "type": "role"
+            "type": "career"
         },
         {
             "date": "MAY 2018 - DEC 2019",
             "title": "Technician",
             "subtitle": "Personal Computers of London",
-            "type": "role"
+            "type": "career"
+        },
+        {
+            "date": "AUG 2019",
+            "title": "Released FRC Build & Test",
+            "subtitle": "The first, and only GitHub CI action for FRC teams",
+            "type": "projects",
+            "outlink": {
+                "show": true,
+                "url": "https://github.com/marketplace/actions/frc-build-test"
+            }
         },
         {
             "date": "JUL 2019",
             "title": "Released devDNS",
             "subtitle": "My first large-scale chat bot. It was inspired by Cloudflare's <a href='https://twitter.com/1111resolver'>@1111resolver</a> bot, and was used by many devRant.com users",
-            "type": "project",
+            "type": "projects",
             "outlink": {
                 "show": true,
-                "url": "https://devrant.com/collabs/2163502/devdns-a-dns-over-devrant-service-inspired-by-at1111resolve-on-twitter",
-                "text":"Announcement"
+                "url": "https://devrant.com/collabs/2163502/devdns-a-dns-over-devrant-service-inspired-by-at1111resolve-on-twitter"
             }
         },
         {
             "date": "JUN 2018 - JUN 2019",
             "title": "Co-lead of Software Development",
             "subtitle": "FRC Team 5024: Raider Robotics",
-            "type": "role"
+            "type": "career"
         },
         {
             "date": "APR 2019",
             "title": "Released ThriftyField",
             "subtitle": "An open-source field management program for use in FRC",
-            "type": "project"
+            "type": "project",
+            "outlink": {
+                "show": true,
+                "url": "https://github.com/frc5024/ThriftyField"
+            }
         },
         {
             "date": "OCT 2016 - JAN 2017",
             "title": "Lead Programmer",
             "subtitle": "FLL Team 22052: Star Treckies",
-            "type": "role"
+            "type": "career"
         }
     ]
 }

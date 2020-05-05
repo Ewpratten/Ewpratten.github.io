@@ -31,11 +31,17 @@
     <div class="timeline-card desktop-only appear">
         <div id="timeline-header">
         </div>
-        <h3>Career timeline</h3>
+        <h3 style="display:ruby">
+            <div class="js-tl-type">Career</div> timeline
+        </h3>
         <div class="badge-legend">
-            {% for type in site.data.timeline.types %}
-            <span class="badge" style="background-color:{{type.color}}; color:{{type.accent}}">{{type.name}}</span>
-            {% endfor %}
+            <a href="#">
+                {% for type in site.data.timeline.types %}
+                <span class="badge" style="background-color:{{type.color}}; color:{{type.accent}}"
+                    onclick="setFilter('{{type.name}}')">{{type.name}}</span>
+                {% endfor %}
+                <span class="badge badge-secondary" onclick="setFilter('all')">all</span>
+            </a>
         </div>
         <ul class="timeline">
             {% for item in site.data.timeline.items %}
@@ -45,6 +51,7 @@
                                 class="fas fa-link"></i></a>{% endif %}</span>
                 </div>
                 <div class="timeline-marker {{item.type}}"></div>
+                <div id="item-type" class="hidden">{{item.type}}</div>
                 <div class="timeline-content">
                     <h3 class="timeline-title">{{item.title}}</h3>
                     <p>{{item.subtitle}}</p>
@@ -57,12 +64,15 @@
     <div class="timeline-card tablet-only">
         <div class="container">
             <div style="text-align:center">
-                <h3>Career timeline</h3>
+                <h3 style="display:ruby">
+                    <div class="js-tl-type">Career</div> timeline
+                </h3 style="display:ruby">
                 <div class="badge-legend">
                     {% for type in site.data.timeline.types %}
-                    <span class="badge"
-                        style="background-color:{{type.color}}; color:{{type.accent}}">{{type.name}}</span>
+                    <span class="badge" style="background-color:{{type.color}}; color:{{type.accent}}"
+                        onclick="setFilter('{{type.name}}')">{{type.name}}</span>
                     {% endfor %}
+                    <span class="badge badge-secondary" onclick="setFilter('all')">all</span>
                 </div>
             </div>
             <ul class="timeline timeline-centered">
@@ -73,6 +83,7 @@
                                     class="fas fa-link"></i></a>{% endif %}</span>
                     </div>
                     <div class="timeline-marker {{item.type}}"></div>
+                    <div id="item-type" class="hidden">{{item.type}}</div>
                     <div class="timeline-content">
                         <h3 class="timeline-title">{{item.title}}</h3>
                         <p>{{item.subtitle}}</p>
@@ -84,4 +95,29 @@
     </div>
 
     {% include foot.html %}
+
+    <script>
+
+        // Editable things
+        let timeline_type = Array.prototype.slice.call(document.getElementsByClassName("js-tl-type"));
+        let timeline_items = Array.prototype.slice.call(document.getElementsByClassName("timeline-item"));
+
+        function setFilter(type) {
+
+            // Set the title
+            timeline_type.forEach(element => { element.innerText = (type == "all") ? "My" : type; });
+
+            // Filter contents
+            timeline_items.forEach(element => {
+                if (element.querySelector("#item-type").innerText.toLowerCase().localeCompare(type.toLowerCase()) == 0 || type == "all") {
+                    element.classList.remove("hidden");
+                } else {
+                    element.classList.add("hidden");
+                }
+            });
+        }
+
+        setFilter('all');
+
+    </script>
 </body>
