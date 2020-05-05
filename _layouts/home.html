@@ -32,13 +32,18 @@
         <div id="timeline-header">
         </div>
         <h3>Career timeline</h3>
+        <div class="badge-legend">
+            {% for type in site.data.timeline.types %}
+            <span class="badge" style="background-color:{{type.color}}; color:{{type.accent}}">{{type.name}}</span>
+            {% endfor %}
+        </div>
         <ul class="timeline">
-            {% for item in site.data.timeline %}
+            {% for item in site.data.timeline.items %}
             <li class="timeline-item">
                 <div class="timeline-info">
                     <span>{{item.date}}</span>
                 </div>
-                <div class="timeline-marker"></div>
+                <div class="timeline-marker {{item.type}}"></div>
                 <div class="timeline-content">
                     <h3 class="timeline-title">{{item.title}}</h3>
                     <p>{{item.subtitle}}</p>
@@ -51,12 +56,12 @@
     <div class="timeline-card tablet-only">
         <div class="container">
             <ul class="timeline timeline-centered">
-                {% for item in site.data.timeline %}
+                {% for item in site.data.timeline.items %}
                 <li class="timeline-item">
                     <div class="timeline-info">
                         <span>{{item.date}}</span>
                     </div>
-                    <div class="timeline-marker"></div>
+                    <div class="timeline-marker {{item.type}}"></div>
                     <div class="timeline-content">
                         <h3 class="timeline-title">{{item.title}}</h3>
                         <p>{{item.subtitle}}</p>

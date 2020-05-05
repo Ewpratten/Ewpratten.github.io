@@ -32,3 +32,15 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+
+
+// Markers
+{% for type in site.data.timeline.types %}
+  .timeline-marker.{{type.name}}:before {
+    background: {{type.color}};
+  }
+  .timeline-item:not(.period):hover .timeline-marker.{{type.name}}:before {
+    background: transparent;
+    border: 3px solid {{type.color}};
+  }
+{% endfor %}

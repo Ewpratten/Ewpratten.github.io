@@ -14,7 +14,7 @@
       height: 20vh;
     }
     @media only screen and (min-device-width: 989px) {
-        height:20vh;
+      height: 20vh;
     }
   }
   .inner-card {
@@ -55,5 +55,9 @@
 
   #timeline-header {
     height: 45vh;
+  }
+
+  .badge-legend{
+      margin-bottom:10px;
   }
 }
