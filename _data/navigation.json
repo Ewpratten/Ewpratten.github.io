@@ -6,8 +6,8 @@
         "bar_after":true
     },
     {
-        "name": "Social",
-        "route": "/socials",
+        "name": "Social Links",
+        "route": "/social",
         "show_on_home": true,
         "bar_after":false
     }

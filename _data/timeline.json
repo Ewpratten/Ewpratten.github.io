@@ -35,6 +35,16 @@
             }
         },
         {
+            "date": "AUG 2019",
+            "title": "Released Shift2",
+            "subtitle": "A tool for storing non-critical text data in such a way that only keyholders can reconstruct a useful message",
+            "type": "projects",
+            "outlink": {
+                "show": true,
+                "url": "https://github.com/Ewpratten/shift"
+            }
+        },
+        {
             "date": "JUL 2019",
             "title": "Released devDNS",
             "subtitle": "My first large-scale chat bot. It was inspired by Cloudflare's <a href='https://twitter.com/1111resolver'>@1111resolver</a> bot, and was used by many devRant.com users",
@@ -54,10 +64,20 @@
             "date": "APR 2019",
             "title": "Released ThriftyField",
             "subtitle": "An open-source field management program for use in FRC",
-            "type": "project",
+            "type": "projects",
             "outlink": {
                 "show": true,
                 "url": "https://github.com/frc5024/ThriftyField"
+            }
+        },
+        {
+            "date": "AUG 2018",
+            "title": "Released dr",
+            "subtitle": "An ed-like command-line client for devRant.com",
+            "type": "projects",
+            "outlink": {
+                "show": true,
+                "url": "https://ewpratten.github.io/dr/"
             }
         },
         {

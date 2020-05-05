@@ -13,13 +13,7 @@ permalink: /blog/:year/:month/:day/:slug
 ga_analytics: UA-74118570-2
 
 # Socials
-twitter_username: ewpratten
-github_username:  ewpratten
-gitlab_username: ewpratten
-devrant_username: ewpratten
-keybase_username: ewpratten
-tiktok_username: evanpratten
-instagram_username: evanpratten
+
 
 # Markdown
 markdown: kramdown
