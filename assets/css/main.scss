@@ -54,3 +54,31 @@ h6 {
 .inline * *{
   display: inline-block;
 }
+
+
+table {
+  width: max-content;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  vertical-align: top;
+}
+
+table th, table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+table tbody {
+  vertical-align: inherit;
+}
+
+table td {
+  border-bottom: 1px solid #dee2e6;
+}
+
+thead th {
+  color: #495057;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
