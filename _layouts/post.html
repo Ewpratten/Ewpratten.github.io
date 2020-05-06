@@ -1,0 +1,24 @@
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include nav.html %}
+
+    <div class="appear container post-body">
+        <div style="height:5%"></div>
+        <h1>{{page.title}}</h1>
+        <h4>{{page.description}}</h4>
+        <p>{{page.date}}</p>
+        <div style="height:2%"></div>
+        <hr>
+
+        {{content}}
+        <div style="height:5%"></div>
+
+    </div>
+
+
+    {% include foot.html %}
+
+</body>

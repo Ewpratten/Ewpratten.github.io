@@ -1,0 +1,79 @@
+#info-card {
+  height: 100vh;
+  @media only screen and (min-device-width: 990px) and (min-device-height: 680px) {
+    width: calc(100vw * 0.6);
+    position: fixed;
+    top: 0;
+  }
+  .home-gap {
+    height: 10vh;
+    @media only screen and (max-device-width: 768px) {
+      height: 5vh;
+    }
+    @media only screen and (max-device-width: 475px) {
+      height: 20vh;
+    }
+    @media only screen and (min-device-width: 990px) and (min-device-height: 680px) {
+      height: 20vh;
+    }
+  }
+  .inner-card {
+    max-width: 500px;
+    text-align: center;
+
+    .name {
+      font-weight: bold;
+      font-size: 4.5rem;
+      margin: 0;
+    }
+    .subtitle {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #aaa;
+    }
+    .profile-pic {
+      max-width: 300px;
+      border-radius: 100%;
+      @media only screen and (max-device-width: 475px) {
+        display: none;
+      }
+    }
+    .home-nav-item {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.timeline-card {
+  @media only screen and (min-device-width: 990px) and (min-device-height: 680px) {
+    margin: 30px;
+    position: absolute;
+    width: calc(100vw * 0.4);
+    right: 0%;
+
+    .timeline {
+      max-width: 600px;
+    }
+  }
+
+  @media only screen and (max-device-height: 597px) {
+    .container {
+      margin-top: 120px;
+    }
+  }
+
+  @media only screen and (max-device-height: 479px) {
+    .container {
+      margin-top: 320px;
+    }
+  }
+
+  #timeline-header {
+    height: 45vh;
+  }
+
+  .badge-legend {
+    margin-bottom: 10px;
+  }
+}

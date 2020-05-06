@@ -1,10 +1,13 @@
 ---
 ---
 
-@import 'ui/theme.scss';
-@import 'ui/background.scss';
-@import 'ui/preloader.scss';
-@import 'ui/fade-animation.scss';
+@import "ui/fade-animation.scss";
+@import "util/mobileutil.scss";
+@import "ui/timeline.scss";
+
+// Pages
+@import "pages/home.scss";
+@import "pages/post.scss";
 
 html {
   box-sizing: border-box;
@@ -15,6 +18,67 @@ html {
   box-sizing: inherit;
 }
 
-.hidden{
+.hidden {
   display: none !important;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+
+// Markers
+{% for type in site.data.timeline.types %}
+  .timeline-marker.{{type.name}}:before {
+    background: {{type.color}};
+  }
+  .timeline-item:not(.period):hover .timeline-marker.{{type.name}}:before {
+    background: transparent;
+    border: 3px solid {{type.color}};
+  }
+{% endfor %}
+
+.inline{
+  white-space:nowrap;
+  display: block;
+}
+
+.inline * *{
+  display: inline-block;
+}
+
+
+table {
+  width: max-content;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  vertical-align: top;
+}
+
+table th, table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+table tbody {
+  vertical-align: inherit;
+}
+
+table td {
+  border-bottom: 1px solid #dee2e6;
+}
+
+thead th {
+  color: #495057;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
 }

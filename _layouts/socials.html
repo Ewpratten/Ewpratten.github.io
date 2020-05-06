@@ -1,0 +1,23 @@
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include nav.html %}
+
+    <div class="appear container" style="text-align:center">
+        <div style="height:30%"></div>
+        <h1>My Socials</h1>
+        <div class="social-links">
+            {% for account in site.data.socials %}
+            <span class="inline"><a href="{{account.url}}"><i class="{{account.icon}}"></i>
+                    {{account.username}}</a></span>
+            {% endfor %}
+        </div>
+
+    </div>
+
+
+    {% include foot.html %}
+
+</body>
