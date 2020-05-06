@@ -13,3 +13,35 @@
         faTikTok
     )
 </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{site.ga_analytics}}"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', '{{site.ga_analytics}}');
+</script>
+
+{% if page.requires_twitter %}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% endif %}
+
+{% if page.requires_roughviz %}
+<script async src="https://unpkg.com/rough-viz@1.0.5" charset="utf-8"></script>
+{% endif %}
+
+{% if page.requires_brython %}
+<script src="/assets/js/brython/brython.js"></script>
+<script src="/assets/js/brythonbrython_stdlib.js"></script>
+
+<script>
+    function startPY() {
+
+        brython();
+        console.log("Started Python")
+    }
+
+    window.onload = startPY;
+</script>
+{% endif %}
